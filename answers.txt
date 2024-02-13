@@ -1,0 +1,5 @@
+start of answers:
+Q1: at line 48 in vector.cpp, the function print_vector is causing the segfault.
+Q2: the while loop inside the print_vector never was able to escape. I fixed this by setting the value inside the while loop while(i<print_this.size()).
+Q3: the loop is infinite because the value of i is never increasing due to a mistake in the for loop. To fix this all I have to do is replace i with i++ in the for loop header.
+Q4: in the vector_sum function, the for loop needed to be changed from i <= sum_this.size() to i< sum_this.size(), because the condition case makes it run 1 more time when really our size is n-1.

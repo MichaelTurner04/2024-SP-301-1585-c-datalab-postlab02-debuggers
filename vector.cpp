@@ -43,7 +43,7 @@ vector<int> init_vector(int max)
 void print_vector(vector<int> print_this)
 {
 	int i = 0;
-	while(print_this.size())
+	while(i<print_this.size())
 	{
 		cout << print_this[i];
 		cout << '\n';
@@ -55,7 +55,7 @@ void print_vector(vector<int> print_this)
 vector<int> copy_cat(vector<int> copy_this)
 {
 	vector<int> copy_here(copy_this.size()*2);
-	for(int i = 0; i < copy_here.size();i)
+	for(int i = 0; i < copy_here.size();i++)
 	{
 		copy_here[i] = copy_this[i%5];
 	}
@@ -65,7 +65,7 @@ vector<int> copy_cat(vector<int> copy_this)
 int vector_sum(vector<int> sum_this)
 {
 	int my_sum = 0;
-	for(int i=0; i <= sum_this.size(); i++){
+	for(int i=0; i < sum_this.size(); i++){
 		my_sum += sum_this[i];
 	}
 	return my_sum;
